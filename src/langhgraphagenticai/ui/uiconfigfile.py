@@ -13,3 +13,6 @@ class Config:
     
     def get_groq_model_options(self):
         return self.config['DEFAULT'].get('GROQ_MODEL_OPTIONS').split(", ")
+    
+    def get_page_title(self):
+        return self.config["DEFAULT"].get('GET_PAGE_TITLE').split(', ')
